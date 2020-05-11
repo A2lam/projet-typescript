@@ -40,3 +40,15 @@ describe('Pokemon Attack', () => {
         expect(p2.life).toBe(2);
     });
 });
+
+describe('Pokemon Fight', () => {
+    it('should return P1 won the Fight over P2', function () {
+        let p1 = new Pokemon("P1", 3, 5);
+        let p2 = new Pokemon("P2", 3, 4);
+        let battle = new Battle(p1, p2);
+
+        let winnerP = battle.fight(p1, p2);
+
+        expect(winnerP).toBe(p1);
+    });
+});
