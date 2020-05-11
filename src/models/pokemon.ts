@@ -1,7 +1,7 @@
 import PokemonInterface from '../interfaces/pokemon';
 
 class Pokemon implements PokemonInterface {
-    constructor(public name: string, public speed: number) {}
+    constructor(public name: string, public life: number, public speed: number) {}
 
     attackFirst(p2: Pokemon): boolean {
         const attackFirst: boolean = this.speed >= p2.speed;
@@ -9,6 +9,10 @@ class Pokemon implements PokemonInterface {
 
         console.log(`${attackingFirst} attaque en premier !`);
         return attackFirst;
+    }
+
+    attack(p2: Pokemon): void {
+        p2.life -= 1;
     }
 }
 
