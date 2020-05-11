@@ -1,7 +1,9 @@
 class Pokemon {
-  constructor(name) {
-    this.name = name;
-  }
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
 }
 
 const pokemon = new Pokemon("test");
