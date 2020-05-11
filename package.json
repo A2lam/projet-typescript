@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/pokemon.js",
+    "start": "node build/pokemon.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/A2lam/projet-typescript/issues"
   },
-  "homepage": "https://github.com/A2lam/projet-typescript#readme"
+  "homepage": "https://github.com/A2lam/projet-typescript#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
 }
